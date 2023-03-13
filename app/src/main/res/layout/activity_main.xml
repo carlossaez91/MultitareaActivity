@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pantalla_dividida"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Sección superior -->
+    <FrameLayout
+        android:id="@+id/vista_superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFCCCC" >
+
+        <!-- Aquí se agregaría el contenido de tu aplicación -->
+
+    </FrameLayout>
+
+    <!-- Sección inferior -->
+    <FrameLayout
+        android:id="@+id/vista_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#CCCCFF" >
+
+        <!-- Aquí se agregaría el contenido de la otra aplicación -->
+
+    </FrameLayout>
+
+    <!-- Botones para cambiar la posición de las aplicaciones y salir del modo de pantalla dividida -->
+    <Button
+        android:id="@+id/btn_cambiar_posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar posición"
+        android:onClick="cambiarPosicion"/>
+
+    <Button
+        android:id="@+id/btn_salir_pantalla_dividida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir de pantalla dividida"
+        android:onClick="salirPantallaDividida"/>
+
+</LinearLayout>
